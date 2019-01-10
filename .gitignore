@@ -31,3 +31,6 @@ tests/build/
 utils/regression_test.js
 
 node_modules/
+
+Makefile
+make.bat
