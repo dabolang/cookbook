@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Roddy Home'
+project = 'Roddy’s Home'
 copyright = '2019, Roddy'
 author = 'Roddy'
 
@@ -128,8 +128,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 't.tex', 't Documentation',
-     'roddy', 'manual'),
+    (master_doc, 'Roddy.tex', 'Roddy Documentation',
+     'Roddy', 'manual'),
 ]
 
 
@@ -138,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 't', 't Documentation',
+    (master_doc, 'Roddy', 'Roddy Documentation',
      [author], 1)
 ]
 
@@ -149,8 +149,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 't', 't Documentation',
-     author, 't', 'One line description of project.',
+    (master_doc, 'Roddy', 'Roddy Documentation',
+     author, 'Roddy', 'One line description of project.',
      'Miscellaneous'),
 ]
 
