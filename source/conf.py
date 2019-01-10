@@ -19,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 't'
-copyright = '2019, roddy'
-author = 'roddy'
+project = 'Roddy Home'
+copyright = '2019, Roddy'
+author = 'Roddy'
 
 # The short X.Y version
 version = ''
