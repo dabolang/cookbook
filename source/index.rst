@@ -8,6 +8,6 @@ Welcome to Roddy's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 
 
    nopcommerce/configuration   
