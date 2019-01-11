@@ -3,6 +3,10 @@
 *.so
 *.swp
 
+.vscode/
+source/_build
+
+
 .dir-locals.el
 .cache/
 .idea
