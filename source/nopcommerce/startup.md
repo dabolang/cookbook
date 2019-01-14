@@ -21,4 +21,22 @@ nop通过**Nop.Web.Framework.Infrastructure.Extensions.ServiceCollectionExtensio
         }
 ```
 ## 配置服务
+### 加载配置文件  
+  首先加载 **NopConfig**,**HostingConfig**配置文件
+### HttpContext支持  
+  ``` C#
+    //add accessor to HttpContext
+    services.AddHttpContextAccessor();
+  ```
+### IEngine 实例化  
+  ``` C#
+    //create, initialize and configure the engine
+    var engine = EngineContext.Create();
+    engine.Initialize(services);
+  ```
+### 配置服务
+  ``` C#
+    var serviceProvider = engine.ConfigureServices(services, configuration);
+  ```
+
 ## 请求管道
