@@ -26,3 +26,9 @@
 
 
 ## HostingConfig
+
+| 项 | 说明 |
+| --- | --- |
+| ForwardedHttpHeader | 报头字段，获取用户IP，默认 X-FORWARDED-FOR  |
+| UseHttpClusterHttps | 检查主机是否使用负载均衡器，默认 false, 当设置为true时，报头中设置HTTP_CLUSTER_HTTPS|
+| UseHttpXForwardedProto | 当为 ture 时检查 X-Forwarded-Proto 包含Https 值，默认 false|
