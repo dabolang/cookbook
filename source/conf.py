@@ -29,7 +29,18 @@ version = ''
 release = ''
 
 from recommonmark.parser import CommonMarkParser
+import sys
+import os
+import sys
+from unittest.mock import MagicMock
 
+class Mock(MagicMock):
+    @classmethod
+    def __getattr__(cls, name):
+        return MagicMock()
+
+MOCK_MODULES = ['pygtk', 'gtk', 'gobject', 'argparse', 'numpy', 'pandas','sphinx_markdown_tables']
+sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -40,7 +51,9 @@ from recommonmark.parser import CommonMarkParser
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 #   'sphinx_markdown_tables',
-extensions = []
+extensions = [
+    'sphinx_markdown_tables',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
