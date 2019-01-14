@@ -24,7 +24,7 @@ copyright = '2019, Roddy'
 author = 'wang zheng'
 
 # The short X.Y version
-version = 'nop-4.1'
+version = '4.1'
 # The full version, including alpha/beta/rc tags
 release = ''
 
