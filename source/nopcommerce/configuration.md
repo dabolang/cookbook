@@ -3,10 +3,11 @@
 ## NopConfig
 
 <!--table-->
+
 | 项 | 说明 |
 | --- | --- |
-|DisplayFullErrorStack|该值指示是否在生产环境中显示完整错误|
-|AzureBlobStorageConnectionString|Azure BLOB 连接字符串|
+| DisplayFullErrorStack | 该值指示是否在生产环境中显示完整错误 |
+| AzureBlobStorageConnectionString | Azure BLOB 连接字符串 |
 |AzureBlobStorageContainerName|Azure BLOB 容器名称|
 |AzureBlobStorageEndPoint|Azure BLOB 默认终结点|
 |RedisCachingEnabled|该值指示是否使用Redis缓存，默认false不使用|
@@ -24,6 +25,7 @@
 |UsePluginsShadowCopy|该值指示在应用程序启动时是否将插件库复制到/plugins/bin目录，默认true|
 |UseRowNumberForPaging|该值指示是否使用与SQL Server 2008和SQL Server 2008R2的向后兼容性，默认false|
 |UseSessionStateTempDataProvider|该值指示是否将TempData存储在session中，默认false|
+
 <!--endtable-->
 
 <!--table-->
