@@ -2,8 +2,6 @@
 
 ## NopConfig
 
-<!--table-->
-
 | 项 | 说明 |
 | --- | --- |
 | DisplayFullErrorStack | 该值指示是否在生产环境中显示完整错误 |
@@ -26,17 +24,5 @@
 |UseRowNumberForPaging|该值指示是否使用与SQL Server 2008和SQL Server 2008R2的向后兼容性，默认false|
 |UseSessionStateTempDataProvider|该值指示是否将TempData存储在session中，默认false|
 
-<!--endtable-->
-
-<!--table-->
-
-| Name | Data | Length |
-| --- | --- | --- |
-| Prefix | 0x01 0x56 | 2 Bytes |
-| Version | 0x01 | 1 Byte |
-| PublicKey | Take the last 20 bytes in raw public key | 20 Bytes |
-| Checksum | After performing SHA256 calculation twice on the byte array obtained in step 3, take the first 4 bytes of the operation result | 4 Bytes |
-
-<!--endtable-->
 
 ## HostingConfig
