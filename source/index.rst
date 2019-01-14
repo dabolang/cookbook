@@ -10,4 +10,5 @@ Welcome to Roddy's documentation!
    :maxdepth: 2
    :caption: 目录:
 
-   nopcommerce/configuration   
+   nopcommerce/startup
+   nopcommerce/configuration
