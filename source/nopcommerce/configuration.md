@@ -3,8 +3,8 @@
 ## NopConfig
 
 <!--table-->
-|项|说明|
-|---|---|
+| 项 | 说明 |
+| --- | --- |
 |DisplayFullErrorStack|该值指示是否在生产环境中显示完整错误|
 |AzureBlobStorageConnectionString|Azure BLOB 连接字符串|
 |AzureBlobStorageContainerName|Azure BLOB 容器名称|
