@@ -25,6 +25,15 @@
 |UseSessionStateTempDataProvider|该值指示是否将TempData存储在session中，默认false|
 <!--endtable-->
 
+<!--table-->
 
+| Name | Data | Length |
+| --- | --- | --- |
+| Prefix | 0x01 0x56 | 2 Bytes |
+| Version | 0x01 | 1 Byte |
+| PublicKey | Take the last 20 bytes in raw public key | 20 Bytes |
+| Checksum | After performing SHA256 calculation twice on the byte array obtained in step 3, take the first 4 bytes of the operation result | 4 Bytes |
+
+<!--endtable-->
 
 ## HostingConfig
