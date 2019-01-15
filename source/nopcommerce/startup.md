@@ -59,8 +59,10 @@ var mvcCoreBuilder = services.AddMvcCore();
 经过上边的步骤插件相关的程序集会加载到mvc框架中。
 
 ### 配置服务
+应用启动时通过下列代码进行服务初始化
 ``` C#
 var serviceProvider = engine.ConfigureServices(services, configuration);
 ```
+详细说明请参考[配置服务](/configureservices"). 
 ### 启动定时任务
 ## 请求管道
