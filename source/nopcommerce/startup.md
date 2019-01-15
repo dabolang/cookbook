@@ -63,6 +63,6 @@ var mvcCoreBuilder = services.AddMvcCore();
 ``` C#
 var serviceProvider = engine.ConfigureServices(services, configuration);
 ```
-详细说明请参考[配置服务](configureservices"). 
+详细说明请参考[配置服务]("configureservices.html"). 
 ### 启动定时任务
 ## 请求管道
