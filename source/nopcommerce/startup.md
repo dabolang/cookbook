@@ -21,9 +21,10 @@ public void Configure(IApplicationBuilder application)
 }
 ```
 
-## 配置服务
+## 1.配置服务
 
 ### 加载配置文件  
+
 首先加载 **NopConfig**,**HostingConfig**配置文件
 
 ### HttpContext支持  
