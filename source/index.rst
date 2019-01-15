@@ -12,3 +12,4 @@ Welcome to Roddy's documentation!
 
    nopcommerce/startup
    nopcommerce/configuration
+   nopcommerce/other
