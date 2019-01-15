@@ -11,5 +11,6 @@ Welcome to Roddy's documentation!
    :caption: 目录:
 
    nopcommerce/startup
+   nopcommerce/configureservices
    nopcommerce/configuration
    nopcommerce/other
