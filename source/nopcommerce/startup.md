@@ -1,4 +1,4 @@
-# 应用启动
+# [应用启动](#1)
 ASP.NET Core 中的应用启动通过 **Startup** 类配置服务和应用的请求管道。<br>
 nop通过**Nop.Web.Framework.Infrastructure.Extensions.ServiceCollectionExtensions**对**IServiceCollection**接口进行了扩展
 ``` C#
@@ -21,7 +21,7 @@ public void Configure(IApplicationBuilder application)
 }
 ```
 
-## 1.配置服务
+## [配置服务](#1)
 
 ### 加载配置文件  
 
