@@ -20,9 +20,12 @@ public void Configure(IApplicationBuilder application)
     application.ConfigureRequestPipeline();
 }
 ```
+
 ## 配置服务
+
 ### 加载配置文件  
 首先加载 **NopConfig**,**HostingConfig**配置文件
+
 ### HttpContext支持  
 ``` C#
 //add accessor to HttpContext
@@ -39,8 +42,10 @@ Initialize方法进行了如下设置
 + 使用NopFileProvider为默认文件提供者,可以通过CommonHelper.DefaultFileProvider 获得
 + 添加services.AddMvcCore()
 + 插件初始化 PluginManager.Initialize(mvcCoreBuilder.PartManager, nopConfig)
+
 ### 文件系统
 nop中的文件系统需要实现**INopFileProvider**接口,该接口默认由**NopFileProvider**类实现
+
 ### 插件初始化  
 PluginManager.Initialize方法用于初始化插件  
 ``` C#
@@ -64,5 +69,13 @@ var mvcCoreBuilder = services.AddMvcCore();
 var serviceProvider = engine.ConfigureServices(services, configuration);
 ```
 详细说明请参考[配置服务](configureservices.html). 
+
 ### 启动定时任务
+``` C#
+//implement schedule tasks
+//database is already installed, so start scheduled tasks
+TaskManager.Instance.Initialize();
+TaskManager.Instance.Start();
+```
+
 ## 请求管道
