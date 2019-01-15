@@ -41,13 +41,14 @@ nop通过**Nop.Web.Framework.Infrastructure.Extensions.ServiceCollectionExtensio
 + 插件初始化 PluginManager.Initialize(mvcCoreBuilder.PartManager, nopConfig);
 #### 插件初始化
     PluginManager.Initialize方法用于初始化插件
+    
     ``` C#
      //initialize plugins
             var nopConfig = provider.GetRequiredService<NopConfig>();
             var mvcCoreBuilder = services.AddMvcCore();
             PluginManager.Initialize(mvcCoreBuilder.PartManager, nopConfig);
     ```
-    
+
 ### 配置服务
   ``` C#
     var serviceProvider = engine.ConfigureServices(services, configuration);
