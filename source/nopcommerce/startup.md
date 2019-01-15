@@ -8,7 +8,7 @@ nop通过**Nop.Web.Framework.Infrastructure.Extensions.ServiceCollectionExtensio
 /// <param name="services">Collection of service descriptors</param>
 public IServiceProvider ConfigureServices(IServiceCollection services)
 {
-return services.ConfigureApplicationServices(Configuration);
+    return services.ConfigureApplicationServices(Configuration);
 }
 
 /// <summary>
@@ -17,7 +17,7 @@ return services.ConfigureApplicationServices(Configuration);
 /// <param name="application">Builder for configuring an application's request pipeline</param>
 public void Configure(IApplicationBuilder application)
 {
-application.ConfigureRequestPipeline();
+    application.ConfigureRequestPipeline();
 }
 ```
 ## 配置服务
@@ -32,7 +32,7 @@ services.AddHttpContextAccessor();
 ``` C#
 //create, initialize and configure the engine
 var engine = EngineContext.Create();
-engine.Initialize(services);
+    engine.Initialize(services);
 ```
 Initialize方法进行了如下设置
 + API 访问支持TLS 1.2
@@ -45,7 +45,7 @@ PluginManager.Initialize方法用于初始化插件
 //initialize plugins
 var nopConfig = provider.GetRequiredService<NopConfig>();
 var mvcCoreBuilder = services.AddMvcCore();
-PluginManager.Initialize(mvcCoreBuilder.PartManager, nopConfig);
+        PluginManager.Initialize(mvcCoreBuilder.PartManager, nopConfig);
 ```
 
 ### 配置服务
