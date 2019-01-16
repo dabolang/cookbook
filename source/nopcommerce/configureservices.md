@@ -2,6 +2,7 @@
 ## 启动服务配置
 ### NopDbStartup DB配置
 主要配置EF相关服务。
+
 ``` C#
 /// <summary>
 /// Add and configure any of the middleware
@@ -19,6 +20,7 @@ public void ConfigureServices(IServiceCollection services, IConfiguration config
 }
 ```
 AddNopObjectContext 扩展用于配置数据库上下文,配置EF使用惰性加载.
+
 ``` C#
 /// <summary>
 /// Register base object context
@@ -59,6 +61,7 @@ services.AddDistributedMemoryCache();
 设置cookie名字为 **.Nop.Session**  
 设置cookie请求协议限制为Https, **SecuritySettings.ForceSslForAllPages** 值默认为true,
 [Cookie配置参考](https://docs.microsoft.com/zh-cn/aspnet/core/security/authentication/cookie?view=aspnetcore-2.2)
+
 ``` C#
 /// <summary>
 /// Adds services required for application session state
@@ -80,6 +83,7 @@ public static void AddHttpSession(this IServiceCollection services)
 > 防止跨站点请求伪造 (XSRF/CSRF) [参考](https://docs.microsoft.com/zh-cn/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2)
 
 设置cookie名字为 **.Nop.Antiforgery**  
+
 ``` C#
 /// <summary>
 /// Adds services required for anti-forgery support
